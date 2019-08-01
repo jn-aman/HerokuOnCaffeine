@@ -46,7 +46,7 @@ body {
 
     </style>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=yes">
   </head>
   <body>	  
 
@@ -124,11 +124,24 @@ body {
     
     return (false)
 }
+
+function removeBack(mail){
+var lastChar=mail[mail.length -1];
+if(lastChar=='/')
+{
+mail=mail.substring(0,mail.length - 1);
+
+}
+return mail;
+}
+
+
 function validateWebsite(mail) 
 {
  
 
  var mailformat = /^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/;
+
  if(mail.match(mailformat))
   {
     return (true)
@@ -142,7 +155,7 @@ function  smit(){
 
 var wp=document.getElementById("caffeinate").value;
 var wt=document.getElementById("email").value;
-
+wp=removeBack(wp);
 
 if(validateWebsite(wp) && ValidateEmail(wt))
 $.ajax({
@@ -187,7 +200,7 @@ function  smit2(){
 
 var wp=document.getElementById("decaffeinate").value;
 var wt=document.getElementById("deemail").value;
-
+wp=removeBack(wp);
 
 if(validateWebsite(wp) && ValidateEmail(wt))
 $.ajax({
