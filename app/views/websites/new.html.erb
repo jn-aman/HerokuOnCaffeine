@@ -1,0 +1,331 @@
+
+  <head>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+ 
+
+    <style type="text/css">
+      .form-group {
+  position: relative;
+  /*margin-bottom: 1.5rem;*/
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+#scroll {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.page {
+  width: 100%;
+  height: 100vh;
+}
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>	  
+
+  	    	<div id="scroll">
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+    	<div class="page" id="one">
+    <center>
+    <img width=450 height=450 src="/assets/Skull_and_Crossbones.svg" />
+
+
+</center> 
+<br>
+<br>
+
+
+
+
+      <div class="form-group">
+        <input type="text" id="caffeinate" class="form-control" required>
+        <label class="form-control-placeholder" for="name">Caffeinate</label>
+      </div>
+
+<div class="form-group">
+        <input type="text" id="email" class="form-control" required>
+        <label class="form-control-placeholder" for="name">E-mail</label>
+      </div>
+
+<center><button type="button" class="btn btn-outline-danger btn-lg" onclick="smit()">Caffeinate</button></center>
+</div>
+  <div class="page" id="two">
+
+
+    <center><img width=450 height=450 src="/assets/for-cross-clipart-black-and-white.jpg" /></center>
+    <br>
+    <br>
+    <br>
+
+
+      <div class="form-group">
+        <input type="text" id="decaffeinate" class="form-control" required>
+        <label class="form-control-placeholder" for="password">De-Caffeinate</label>
+      </div>
+      <div class="form-group">
+        <input type="text" id="deemail" class="form-control" required>
+        <label class="form-control-placeholder" for="name">E-mail</label>
+      </div>
+      <center><button type="button" class="btn btn-outline-success btn-lg" onclick="smit2()">De-Caffeinate</button></center>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+
+<script type="text/javascript">
+    document.getElementById("caffeinate").addEventListener("click", function(event){
+  event.preventDefault()
+  
+});
+  document.getElementById("decaffeinate").addEventListener("click", function(event){
+  event.preventDefault()
+});
+  function ValidateEmail(mail) 
+{
+ 
+
+ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(mail.match(mailformat))
+  {
+    return (true)
+  }
+    
+    return (false)
+}
+function validateWebsite(mail) 
+{
+ 
+
+ var mailformat = /^\w+([\.-]?\w+)*\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(mail.match(mailformat))
+  {
+    return (true)
+  }
+    
+    return (false)
+}
+
+function  smit(){
+
+
+var wp=document.getElementById("caffeinate").value;
+var wt=document.getElementById("email").value;
+
+
+if(validateWebsite(wp) && ValidateEmail(wt))
+$.ajax({
+  type:"GET",
+  url:"websites/create",
+  dataType:"json",
+  data: { url: wp,email: wt},
+  success:function(result){
+Swal.fire(
+  'Good job!',
+  'Website is Successfully Caffeinated!',
+  'success'
+) 
+wp="";
+wt="";
+
+ },
+      error: function () {
+Swal.fire({
+  type: 'error',
+  title: 'Oops...',
+  text: 'Details exists!'
+})      }
+})
+
+
+
+else
+{
+Swal.fire({
+  type: 'error',
+  title: 'Oops...',
+  text: 'Details not Entered!'
+})
+}
+}
+
+
+
+function  smit2(){
+
+
+var wp=document.getElementById("decaffeinate").value;
+var wt=document.getElementById("deemail").value;
+
+
+if(validateWebsite(wp) && ValidateEmail(wt))
+$.ajax({
+  type:"GET",
+  url:"websites/delete",
+  dataType:"json",
+  data: { url: wp,email: wt},
+  success:function(result){
+Swal.fire(
+  'Good job!',
+  'Website is Successfully De-Caffeinated!',
+  'success'
+) 
+wp="";
+wt="";
+
+ },
+      error: function () {
+Swal.fire({
+  type: 'error',
+  title: 'Oops...',
+  text: 'Details not Found!'
+})      }
+})
+
+
+
+else
+{
+Swal.fire({
+  type: 'error',
+  title: 'Oops...',
+  text: 'Details are Incorrect!'
+})
+}
+}
+
+
+</script>
+<script type="text/javascript">
+	
+
+
+/* See related post at
+https://codepen.io/Javarome/post/full-page-sliding
+*/
+function ScrollHandler(pageId) {
+  var page = document.getElementById(pageId);
+  var pageStart = page.offsetTop;
+  var pageJump = false;
+  var viewStart;
+  var duration = 1000;
+  var scrolled = document.getElementById("scroll");
+
+  function scrollToPage() {
+    pageJump = true;
+
+    // Calculate how far to scroll
+    var startLocation = viewStart;
+    var endLocation = pageStart;
+    var distance = endLocation - startLocation;
+
+    var runAnimation;
+
+    // Set the animation variables to 0/undefined.
+    var timeLapsed = 0;
+    var percentage, position;
+
+    var easing = function(progress) {
+      return progress < 0.5
+        ? 4 * progress * progress * progress
+        : (progress - 1) * (2 * progress - 2) * (2 * progress - 2) + 1; // acceleration until halfway, then deceleration
+    };
+
+    function stopAnimationIfRequired(pos) {
+      if (pos == endLocation) {
+        cancelAnimationFrame(runAnimation);
+        setTimeout(function() {
+          pageJump = false;
+        }, 500);
+      }
+    }
+
+    var animate = function() {
+      timeLapsed += 16;
+      percentage = timeLapsed / duration;
+      if (percentage > 1) {
+        percentage = 1;
+        position = endLocation;
+      } else {
+        position = startLocation + distance * easing(percentage);
+      }
+      scrolled.scrollTop = position;
+      runAnimation = requestAnimationFrame(animate);
+      stopAnimationIfRequired(position);
+      console.log("position=" + scrolled.scrollTop + "(" + percentage + ")");
+    };
+    // Loop the animation function
+    runAnimation = requestAnimationFrame(animate);
+  }
+
+  window.addEventListener("wheel", function(event) {
+    viewStart = scrolled.scrollTop;
+    if (!pageJump) {
+      var pageHeight = page.scrollHeight;
+      var pageStopPortion = pageHeight / 2;
+      var viewHeight = window.innerHeight;
+
+      var viewEnd = viewStart + viewHeight;
+      var pageStartPart = viewEnd - pageStart;
+      var pageEndPart = pageStart + pageHeight - viewStart;
+
+      var canJumpDown = pageStartPart >= 0;
+      var stopJumpDown = pageStartPart > pageStopPortion;
+
+      var canJumpUp = pageEndPart >= 0;
+      var stopJumpUp = pageEndPart > pageStopPortion;
+
+      var scrollingForward = event.deltaY > 0;
+      if (
+        (scrollingForward && canJumpDown && !stopJumpDown) ||
+        (!scrollingForward && canJumpUp && !stopJumpUp)
+      ) {
+        event.preventDefault();
+        scrollToPage();
+      }
+      false; //
+    } else {
+      event.preventDefault();
+    }
+  });
+}
+new ScrollHandler("one");
+new ScrollHandler("two");
+
+
+
+
+
+
+</script>
