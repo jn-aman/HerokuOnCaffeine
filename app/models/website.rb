@@ -1,20 +1,31 @@
 class Website < ApplicationRecord
 
 def self.looping
-require 'open-uri'
-
+require 'net/http'
+@response=[]
 Website.all.each do |p|
  	if p.url
-  		k=p.url+'/'
-  		url = URI.parse(p.url)
+  	response=[]	
+	k=p.url+'/'
+  		url = URI(k)
   		# `export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES`
-	  	open(url) do |f|
-			@response=f.status
-		end
+#begin	  	
+#io_thing = open(url)
+#@response.push( io_thing.status[0])
+#@response.push( io_thing.status[1])
+#rescue OpenURI::HTTPError => the_error
+#@response[0]=the_error.io.status[0]
+#@response[1]==the_error.io.status[0]
+#end
+
+response1 = Net::HTTP.get_response(url)
+response.push(response1.code)
+response.push(response1.message)
 p.updated_at=Time.now
-p.code=@response[0]
+p.code=response[0]
 p.save
-		if @response[0]!='200'
+@response=response	
+	if @response[0]!='200'
 
 			Thread.new do
 			NofitymailMailer.error(p,@response).deliver_now
