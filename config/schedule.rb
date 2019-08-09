@@ -9,7 +9,7 @@ env :GEM_PATH, ENV['GEM_PATH']
 #
 set :output, "cron_log.log"
 #
-every 25.minutes do
+every 5.minutes do
 runner "Website.looping"
 end
 
