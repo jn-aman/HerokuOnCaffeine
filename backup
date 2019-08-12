@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
+   <script src="https://www.google.com/jsapi"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/chartkick@3.1.1/dist/chartkick.min.js"></script>
+</head>
+
+<%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
+
+  <body>
+<center>    <h1>Hi <%= @email %></h1>
+<br><br><br>    
+<p><h2>
+      Status of Your Website:-
+    </h2></p>
+<p>
+<% @renderer.result() % >
+.</p>
+</center>
+  </body>
+</html>

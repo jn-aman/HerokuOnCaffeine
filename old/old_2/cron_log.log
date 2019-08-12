@@ -1,0 +1,462 @@
+Running via Spring preloader in process 15841
+Running via Spring preloader in process 19110
+Running via Spring preloader in process 22184
+Running via Spring preloader in process 25112
+Running via Spring preloader in process 28551
+/home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/net/http.rb:906:in `rescue in block in connect': Failed to open TCP connection to adhs1.hre.com:443 (getaddrinfo: Name or service not known) (SocketError)
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/net/http.rb:903:in `block in connect'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/timeout.rb:93:in `block in timeout'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/timeout.rb:103:in `timeout'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/net/http.rb:902:in `connect'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/net/http.rb:887:in `do_start'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/net/http.rb:876:in `start'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:323:in `open_http'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:741:in `buffer_open'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:212:in `block in open_loop'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:210:in `catch'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:210:in `open_loop'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:151:in `open_uri'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:721:in `open'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:31:in `open'
+	from /home/aman/Desktop/hoc/app/models/website.rb:11:in `block in looping'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activerecord-5.0.7.2/lib/active_record/relation/delegation.rb:38:in `each'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activerecord-5.0.7.2/lib/active_record/relation/delegation.rb:38:in `each'
+	from /home/aman/Desktop/hoc/app/models/website.rb:6:in `looping'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `eval'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:138:in `require_command!'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:104:in `runner'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/Desktop/hoc/bin/rails:9:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 31928
+Running via Spring preloader in process 3492
+Running via Spring preloader in process 4607
+Running via Spring preloader in process 6289
+Running via Spring preloader in process 7283
+Running via Spring preloader in process 8549
+Running via Spring preloader in process 9667
+Running via Spring preloader in process 11233
+Running via Spring preloader in process 12550
+Running via Spring preloader in process 13840
+Running via Spring preloader in process 14814
+Running via Spring preloader in process 16199
+Running via Spring preloader in process 17064
+Running via Spring preloader in process 18853
+Running via Spring preloader in process 19760
+Running via Spring preloader in process 21807
+Running via Spring preloader in process 23309
+Running via Spring preloader in process 25001
+Running via Spring preloader in process 26698
+Running via Spring preloader in process 28009
+Running via Spring preloader in process 28901
+Running via Spring preloader in process 30183
+Running via Spring preloader in process 31177
+Running via Spring preloader in process 32490
+Running via Spring preloader in process 1055
+Running via Spring preloader in process 2998
+Running via Spring preloader in process 3852
+Running via Spring preloader in process 4955
+Running via Spring preloader in process 6335
+Running via Spring preloader in process 7499
+Running via Spring preloader in process 8354
+Running via Spring preloader in process 9684
+Running via Spring preloader in process 10532
+Running via Spring preloader in process 12016
+Running via Spring preloader in process 13155
+Running via Spring preloader in process 14454
+Running via Spring preloader in process 15294
+Running via Spring preloader in process 16442
+Running via Spring preloader in process 17271
+Running via Spring preloader in process 18420
+Running via Spring preloader in process 19421
+Running via Spring preloader in process 20829
+Running via Spring preloader in process 22198
+Running via Spring preloader in process 23501
+Running via Spring preloader in process 24322
+Running via Spring preloader in process 25624
+Running via Spring preloader in process 26755
+Running via Spring preloader in process 27961
+Running via Spring preloader in process 28811
+Running via Spring preloader in process 30070
+Running via Spring preloader in process 30986
+Running via Spring preloader in process 32615
+Running via Spring preloader in process 1871
+Running via Spring preloader in process 3504
+Running via Spring preloader in process 4358
+Running via Spring preloader in process 5489
+Running via Spring preloader in process 6302
+Running via Spring preloader in process 7443
+Running via Spring preloader in process 8264
+Running via Spring preloader in process 9645
+Running via Spring preloader in process 10650
+Running via Spring preloader in process 11781
+Running via Spring preloader in process 12597
+Running via Spring preloader in process 14406
+Running via Spring preloader in process 15299
+Running via Spring preloader in process 16454
+Running via Spring preloader in process 17638
+Running via Spring preloader in process 18769
+Running via Spring preloader in process 19967
+Running via Spring preloader in process 21483
+Running via Spring preloader in process 22325
+Running via Spring preloader in process 23575
+Running via Spring preloader in process 24398
+Running via Spring preloader in process 26132
+Running via Spring preloader in process 26995
+Running via Spring preloader in process 29298
+Running via Spring preloader in process 30181
+Running via Spring preloader in process 31960
+Running via Spring preloader in process 332
+Running via Spring preloader in process 1812
+Running via Spring preloader in process 2680
+Running via Spring preloader in process 4233
+Running via Spring preloader in process 5151
+Running via Spring preloader in process 6432
+Running via Spring preloader in process 7418
+Running via Spring preloader in process 8963
+Running via Spring preloader in process 10064
+Running via Spring preloader in process 11392
+Running via Spring preloader in process 13077
+Running via Spring preloader in process 14497
+Running via Spring preloader in process 15322
+Running via Spring preloader in process 16399
+Running via Spring preloader in process 17204
+Running via Spring preloader in process 18509
+Running via Spring preloader in process 19556
+Running via Spring preloader in process 20806
+Running via Spring preloader in process 21708
+Running via Spring preloader in process 22816
+Running via Spring preloader in process 23591
+Running via Spring preloader in process 24706
+Running via Spring preloader in process 25539
+Running via Spring preloader in process 26613
+Running via Spring preloader in process 27386
+Running via Spring preloader in process 28985
+Running via Spring preloader in process 29773
+Running via Spring preloader in process 30835
+Running via Spring preloader in process 31653
+Running via Spring preloader in process 32736
+Running via Spring preloader in process 1358
+Running via Spring preloader in process 2694
+Running via Spring preloader in process 3468
+Running via Spring preloader in process 5326
+Running via Spring preloader in process 6455
+Running via Spring preloader in process 7708
+Running via Spring preloader in process 8911
+Running via Spring preloader in process 10206
+Running via Spring preloader in process 11035
+Running via Spring preloader in process 12135
+Running via Spring preloader in process 13018
+Running via Spring preloader in process 14355
+Running via Spring preloader in process 15528
+Running via Spring preloader in process 16906
+Running via Spring preloader in process 17723
+Running via Spring preloader in process 18844
+Running via Spring preloader in process 19709
+Running via Spring preloader in process 21508
+Running via Spring preloader in process 22325
+Running via Spring preloader in process 23447
+Running via Spring preloader in process 24327
+Running via Spring preloader in process 25983
+Running via Spring preloader in process 26795
+Running via Spring preloader in process 27996
+Running via Spring preloader in process 28835
+Running via Spring preloader in process 29998
+Running via Spring preloader in process 30820
+Running via Spring preloader in process 31972
+Running via Spring preloader in process 335
+Running via Spring preloader in process 2028
+Running via Spring preloader in process 3161
+Running via Spring preloader in process 4307
+Running via Spring preloader in process 5141
+Running via Spring preloader in process 6541
+Running via Spring preloader in process 7528
+Running via Spring preloader in process 8700
+Running via Spring preloader in process 9545
+Running via Spring preloader in process 10906
+Running via Spring preloader in process 11947
+Running via Spring preloader in process 13410
+Running via Spring preloader in process 14813
+Running via Spring preloader in process 15979
+Running via Spring preloader in process 16881
+Running via Spring preloader in process 18248
+Running via Spring preloader in process 19296
+Running via Spring preloader in process 20778
+Running via Spring preloader in process 21852
+Running via Spring preloader in process 23838
+Running via Spring preloader in process 24828
+Running via Spring preloader in process 26165
+Running via Spring preloader in process 26989
+Running via Spring preloader in process 28711
+Running via Spring preloader in process 29657
+Running via Spring preloader in process 30835
+Running via Spring preloader in process 32025
+Running via Spring preloader in process 1094
+Running via Spring preloader in process 3368
+Running via Spring preloader in process 4670
+Running via Spring preloader in process 5546
+Running via Spring preloader in process 6713
+Running via Spring preloader in process 7539
+Running via Spring preloader in process 8857
+Running via Spring preloader in process 9827
+Running via Spring preloader in process 11086
+Running via Spring preloader in process 12259
+Running via Spring preloader in process 13632
+Running via Spring preloader in process 14672
+Running via Spring preloader in process 15806
+Running via Spring preloader in process 16644
+Running via Spring preloader in process 17820
+Running via Spring preloader in process 18651
+Running via Spring preloader in process 19853
+Running via Spring preloader in process 20824
+Running via Spring preloader in process 22166
+Running via Spring preloader in process 23018
+Running via Spring preloader in process 24680
+Running via Spring preloader in process 25688
+Running via Spring preloader in process 27144
+Running via Spring preloader in process 28133
+Running via Spring preloader in process 29617
+Running via Spring preloader in process 30634
+Running via Spring preloader in process 31768
+Running via Spring preloader in process 32586
+Running via Spring preloader in process 2224
+Running via Spring preloader in process 3792
+Running via Spring preloader in process 5655
+Running via Spring preloader in process 7000
+Running via Spring preloader in process 8973
+Running via Spring preloader in process 10323
+Running via Spring preloader in process 12108
+Running via Spring preloader in process 18400
+Running via Spring preloader in process 23718
+Running via Spring preloader in process 24630
+Running via Spring preloader in process 26194
+Running via Spring preloader in process 27035
+Running via Spring preloader in process 28197
+Running via Spring preloader in process 29028
+Running via Spring preloader in process 30195
+Running via Spring preloader in process 31034
+Running via Spring preloader in process 650
+Running via Spring preloader in process 2656
+Running via Spring preloader in process 4174
+Running via Spring preloader in process 5613
+Running via Spring preloader in process 6954
+Running via Spring preloader in process 7784
+Running via Spring preloader in process 8955
+Running via Spring preloader in process 9787
+Running via Spring preloader in process 10926
+Running via Spring preloader in process 12176
+Running via Spring preloader in process 13222
+Running via Spring preloader in process 13976
+Running via Spring preloader in process 15024
+Running via Spring preloader in process 15774
+Running via Spring preloader in process 16822
+Running via Spring preloader in process 18090
+Running via Spring preloader in process 19216
+Running via Spring preloader in process 20169
+Running via Spring preloader in process 21372
+Running via Spring preloader in process 22504
+Running via Spring preloader in process 24550
+/home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:363:in `open_http': 404 Not Found (OpenURI::HTTPError)
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:741:in `buffer_open'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:212:in `block in open_loop'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:210:in `catch'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:210:in `open_loop'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:151:in `open_uri'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:721:in `open'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/open-uri.rb:31:in `open'
+	from /home/aman/Desktop/hoc/app/models/website.rb:11:in `block in looping'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activerecord-5.0.7.2/lib/active_record/relation/delegation.rb:38:in `each'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activerecord-5.0.7.2/lib/active_record/relation/delegation.rb:38:in `each'
+	from /home/aman/Desktop/hoc/app/models/website.rb:6:in `looping'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `eval'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:138:in `require_command!'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:104:in `runner'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/Desktop/hoc/bin/rails:9:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 25914
+Running via Spring preloader in process 27496
+Running via Spring preloader in process 28253
+Running via Spring preloader in process 29341
+Running via Spring preloader in process 30142
+Running via Spring preloader in process 31755
+Running via Spring preloader in process 32532
+Running via Spring preloader in process 1316
+Running via Spring preloader in process 2643
+Running via Spring preloader in process 3856
+Running via Spring preloader in process 4911
+Running via Spring preloader in process 5560
+Running via Spring preloader in process 7199
+Running via Spring preloader in process 8774
+Running via Spring preloader in process 10508
+Running via Spring preloader in process 12442
+Running via Spring preloader in process 13794
+Running via Spring preloader in process 16053
+Running via Spring preloader in process 17341
+Running via Spring preloader in process 19175
+Running via Spring preloader in process 20458
+Running via Spring preloader in process 22353
+Running via Spring preloader in process 23685
+Running via Spring preloader in process 25792
+Running via Spring preloader in process 27149
+Running via Spring preloader in process 29320
+Running via Spring preloader in process 30943
+Running via Spring preloader in process 923
+Running via Spring preloader in process 3245
+Running via Spring preloader in process 5190
+Running via Spring preloader in process 7208
+Running via Spring preloader in process 9027
+Running via Spring preloader in process 10585
+Running via Spring preloader in process 12569
+Running via Spring preloader in process 14032
+Running via Spring preloader in process 2489
+Running via Spring preloader in process 3257
+Running via Spring preloader in process 4401
+Running via Spring preloader in process 5181
+Running via Spring preloader in process 6266
+Running via Spring preloader in process 7096
+Running via Spring preloader in process 8414
+Running via Spring preloader in process 9335
+Running via Spring preloader in process 10822
+Running via Spring preloader in process 11794
+Running via Spring preloader in process 12935
+Running via Spring preloader in process 13830
+Running via Spring preloader in process 15059
+Running via Spring preloader in process 15953
+Running via Spring preloader in process 17303
+Running via Spring preloader in process 18257
+Running via Spring preloader in process 19425
+Running via Spring preloader in process 20575
+Running via Spring preloader in process 21924
+Running via Spring preloader in process 22741
+Running via Spring preloader in process 23898
+Running via Spring preloader in process 24752
+Running via Spring preloader in process 25910
+Running via Spring preloader in process 26739
+Running via Spring preloader in process 27896
+Running via Spring preloader in process 28712
+Running via Spring preloader in process 30196
+Running via Spring preloader in process 31121
+Running via Spring preloader in process 32259
+Running via Spring preloader in process 621
+Running via Spring preloader in process 2152
+Running via Spring preloader in process 3021
+Running via Spring preloader in process 4419
+Running via Spring preloader in process 5238
+Running via Spring preloader in process 6386
+Running via Spring preloader in process 8153
+Running via Spring preloader in process 9376
+Running via Spring preloader in process 10211
+Running via Spring preloader in process 11370
+Running via Spring preloader in process 12212
+Running via Spring preloader in process 13928
+Running via Spring preloader in process 15257
+Running via Spring preloader in process 16419
+Running via Spring preloader in process 17898
+Running via Spring preloader in process 19834
+Running via Spring preloader in process 20748
+Running via Spring preloader in process 21903
+Running via Spring preloader in process 23297
+Running via Spring preloader in process 25027
+Running via Spring preloader in process 26423
+Running via Spring preloader in process 27711
+Running via Spring preloader in process 28541
+Running via Spring preloader in process 30021
+Running via Spring preloader in process 31150
+Running via Spring preloader in process 32389
+Running via Spring preloader in process 701
+Running via Spring preloader in process 2212
+Running via Spring preloader in process 3020
+Running via Spring preloader in process 4254
+Running via Spring preloader in process 2451
+Running via Spring preloader in process 3604
+Running via Spring preloader in process 4456
+Running via Spring preloader in process 5713
+Running via Spring preloader in process 7083
+Running via Spring preloader in process 8585
+Running via Spring preloader in process 9363
+Running via Spring preloader in process 10571
+Running via Spring preloader in process 11523
+Running via Spring preloader in process 12932
+Running via Spring preloader in process 13718
+Running via Spring preloader in process 14803
+Running via Spring preloader in process 15578
+Running via Spring preloader in process 16646
+Running via Spring preloader in process 17503
+Running via Spring preloader in process 18649
+Running via Spring preloader in process 19424
+Running via Spring preloader in process 20523
+Running via Spring preloader in process 21306
+Running via Spring preloader in process 22768
+Running via Spring preloader in process 24284
+Running via Spring preloader in process 25507
+Running via Spring preloader in process 26387
+Running via Spring preloader in process 27516
+Running via Spring preloader in process 28495
+Running via Spring preloader in process 29734
+Running via Spring preloader in process 30526
+Running via Spring preloader in process 31937
+Running via Spring preloader in process 370
+Running via Spring preloader in process 3232
+Running via Spring preloader in process 5314
+Running via Spring preloader in process 8438
+Running via Spring preloader in process 10916
+Running via Spring preloader in process 12544
+Running via Spring preloader in process 13321
+Running via Spring preloader in process 14557
+Running via Spring preloader in process 15559
+Running via Spring preloader in process 16882
+Running via Spring preloader in process 17725
+Running via Spring preloader in process 18923
+Running via Spring preloader in process 19696
+Running via Spring preloader in process 21388
+Running via Spring preloader in process 22173
+Running via Spring preloader in process 23252
+Running via Spring preloader in process 24036
+Running via Spring preloader in process 26121
+Running via Spring preloader in process 29242
+Running via Spring preloader in process 30656
+Running via Spring preloader in process 31088
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined local variable or method `response' for Website (call 'Website.connection' to establish a connection):Class
+Did you mean?  respond_to?
+Running via Spring preloader in process 31544
+Running via Spring preloader in process 31960
+Running via Spring preloader in process 431
+Running via Spring preloader in process 1282

@@ -53,7 +53,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
 
-
+config.web_console.whiny_requests =false
 config.action_mailer.delivery_method = :smtp
 
 
@@ -70,8 +70,9 @@ config.action_mailer.delivery_method = :smtp
     :enable_starttls_auto => true 
   }
 
-
-
+config.action_mailer.default_url_options = { :host => 'https://www.herokuoncaffeine.in'}
+config.action_mailer.asset_host = 'https://www.herokuoncaffeine.in'
+config.action_controller.default_url_options = { host: 'https://www.herokuoncaffeine.in' }
 
 
 
