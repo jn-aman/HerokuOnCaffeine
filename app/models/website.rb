@@ -18,6 +18,8 @@ p.save
 report=Report.new
 report.email=p.email
 report.url=p.url
+report.code=response[0]
+report.error=response[1]
 if p.code=="200"
 report.up=1
 else
@@ -38,6 +40,20 @@ end
 
 #function
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

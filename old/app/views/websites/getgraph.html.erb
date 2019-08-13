@@ -1,0 +1,63 @@
+<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4, minimum-scale=0.4, user-scalable=yes, target-densityDpi=device-dpi" />
+<style>html,
+body {
+  height: 90%
+}</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<div class="h-100 row align-items-center">
+  <div class="col" >
+
+<center><%= line_chart @p,  width: "800px", height: "300px" ,xtitle: "Timeline", ytitle: "Status" , dataset: {borderWidth: 2}%>
+ </div>
+
+</div>
+<script>
+
+var p="<%== j @k %>";
+
+var canvas = $("canvas");
+
+
+var context = canvas.get(0).getContext("2d");
+
+
+var dataURL = canvas.get(0).toDataURL();
+
+
+var download = function(){
+  var link = document.createElement('a');
+  link.download = p;
+  link.href = dataURL
+  link.click();
+}
+
+
+function dataURLtoBlob(dataURL) {
+	  // Decode the dataURL
+	  var binary = atob(dataURL.split(',')[1]);
+	  // Create 8-bit unsigned array
+	  var array = [];
+	  for(var i = 0; i < binary.length; i++) {
+	      array.push(binary.charCodeAt(i));
+	  }
+	  // Return our Blob object
+	  return new Blob([new Uint8Array(array)], {type: 'image/png'});
+	}
+
+var file= dataURLtoBlob(dataURL);
+	// Create new form data
+	var fd = new FormData();
+	// Append our Canvas image file to the form data
+	fd.append("image", file);
+
+//var request = new XMLHttpRequest();
+//request.open('post', '/websites/insertdata', true);
+//request.onload = function() { console.log("Server responded with %o", request.responseText) };
+//request.send(fd);
+download();
+
+
+</script>
+

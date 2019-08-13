@@ -1,0 +1,40 @@
+<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4, minimum-scale=0.4, user-scalable=yes, target-densityDpi=device-dpi" />
+<style>html,
+body {
+  height: 90%
+}</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<div class="h-100 row align-items-center">
+  <div class="col" >
+
+<center><%= line_chart @p,  width: "800px", height: "300px" ,xtitle: "Timeline", ytitle: "Status" , dataset: {borderWidth: 2}%>
+ </div>
+
+</div>
+<script>
+
+var p="<%== j @k %>";
+
+var canvas = $("canvas");
+
+
+var context = canvas.get(0).getContext("2d");
+
+
+var dataURL = canvas.get(0).toDataURL('image/jpg');
+
+
+var download = function(){
+  var link = document.createElement('a');
+  link.download = p;
+  link.href = dataURL
+  link.click();
+}
+
+
+
+
+</script>
+
