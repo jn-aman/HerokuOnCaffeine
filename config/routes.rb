@@ -6,7 +6,7 @@ get 'websites/getgraph/:email', to: 'websites#getgraph', constraints: { email: /
 
 get 'websites/getgraph2/:email', to: 'websites#getgraph2', constraints: { email: /[^\/]+/} , :as => :websites_status2
 
-
+get 'speedtest' , to: 'websites#speedtest'
 post 'websites/insertdata' 
 namespace :websites do
 get "completetask"

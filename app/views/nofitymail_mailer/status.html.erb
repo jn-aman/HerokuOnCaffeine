@@ -59,6 +59,9 @@
         /* Allow smoother rendering of resized image in Internet Explorer */
         /* RESET STYLES */
         
+
+
+
         img {
             border: 0;
             height: auto;
@@ -277,7 +280,7 @@ Herokuoncaffeine.in     </div>
                 <td align="center" style="border-radius: 6px;" bgcolor="#FFFFFF">
                    
    <span>                    <%= link_to "Status of Your Website", websites_status2_url(@email), :class => "btn btn-outline-success" %> </span> &nbsp;&nbsp;&nbsp;
-                    <%#= link_to "Status of Your Website", websites_status2_url(@email), :class => "btn btn-outline-success" %>
+                    <%#= link_to "Status of Your Website", websites_status2_url(@email), :method => :post ,:class => "btn btn-outline-success" %>
 
                 </td>
             </tr>

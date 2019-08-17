@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+<center>    <h1>Hi <%= @user.email %></h1>
+<br><br><br>    
+<p><h2>
+     YOUR WEBSITE( <%= @user.url %> ) IS DOWN!!!!!
+    </h2></p>
+<h2><p>
+Error Code :  <%= @response[0] %><br>
+Error Message : <%= @response[1] %><br>
+</p></h2>
+</center>
+  </body>
+</html>

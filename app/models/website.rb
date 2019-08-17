@@ -44,7 +44,30 @@ end
 
 
 
+def self.checking
+@res=[]
+require 'net/http'
+@website=Website.where("code = ?","200")
+		@website.each do |p|
+		 	if p.url
+			k=p.url+'/'
+  			url = URI(k)
+			response1 = Net::HTTP.get_response(url)
+				if response1.code!="200"
+				p.code=response1.code
+				p.save
+				@res.push(response1.code)
 
+				@res.push(response1.message)
+				NofitymailMailer.error(p,@res).deliver_now
+				end
+			end		
+
+		end
+
+
+
+end
 
 
 

@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 gem "groupdate"
-
+gem 'izitoast'
  gem 'rest-client'
 
 gem "chartkick"

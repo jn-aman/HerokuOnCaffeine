@@ -1,0 +1,26 @@
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+
+
+    <%= javascript_include_tag  'data-turbolinks-track': 'reload' %>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+  
+
+
+
+ <h1>Hi <%= @email %></h1>
+
+      Status of Your Website:-
+<%#= line_chart websites_completetask_path %>
+    
+
+<%= line_chart @p %>
+
+</center>
+  </body>
+</html>

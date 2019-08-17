@@ -5,16 +5,24 @@ class WebsitesController < ApplicationController
 
   def new
   end
-
+def speedtest
+render layout: false
+end
 
   def create
+require 'net/http'
    @w=params[:url]
    @email=params[:email]
 @website = Website.new
 @website.url=@w
 @website.email=@email
 
-if !( Website.exists?(url: @website.rectify ) and  Website.exists?(email: @email))  
+if !( Website.exists?(url: @website.rectify ) and  Website.exists?(email: @email)) 
+  		
+	k=@website.url
+url = URI(k)
+ response1 = Net::HTTP.get_response(url)
+@website.code=response1.code
 @website.save
 Thread.new do 
 NofitymailMailer.welcome_mail(@website).deliver_now

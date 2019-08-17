@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-
+//= require iziToast
 
 //= require_tree .
 //= require chartkick

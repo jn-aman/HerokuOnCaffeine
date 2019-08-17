@@ -13,6 +13,11 @@ every 29.minutes do
 runner "Website.looping"
 end
 
+every 1.minute do
+runner "Website.checking"
+end
+
+
 every 1.day, at: '4:30 am' do
   runner "Report.sendReport"
 end

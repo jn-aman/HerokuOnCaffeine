@@ -1,1 +1,109 @@
-Running via Spring preloader in process 15841
+Running via Spring preloader in process 11729
+Running via Spring preloader in process 12504
+Running via Spring preloader in process 12499
+/home/aman/Desktop/hoc/app/mailers/nofitymail_mailer.rb:32:in `read': No such file or directory @ rb_sysopen - /home/aman/Downloads/788.png (Errno::ENOENT)
+	from /home/aman/Desktop/hoc/app/mailers/nofitymail_mailer.rb:32:in `status'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.2/lib/abstract_controller/base.rb:188:in `process_action'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.2/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/callbacks.rb:90:in `run_callbacks'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.2/lib/abstract_controller/callbacks.rb:19:in `process_action'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.2/lib/abstract_controller/base.rb:126:in `process'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/rescuable.rb:23:in `block in process'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/rescuable.rb:15:in `handle_exceptions'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/rescuable.rb:22:in `process'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionview-5.0.7.2/lib/action_view/rendering.rb:30:in `process'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/base.rb:595:in `block in process'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/notifications.rb:164:in `block in instrument'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/notifications.rb:164:in `instrument'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/base.rb:594:in `process'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/message_delivery.rb:105:in `block in processed_mailer'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/message_delivery.rb:104:in `tap'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/message_delivery.rb:104:in `processed_mailer'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/actionmailer-5.0.7.2/lib/action_mailer/message_delivery.rb:95:in `deliver_now'
+	from /home/aman/Desktop/hoc/app/models/report.rb:11:in `block in sendReport'
+	from /home/aman/Desktop/hoc/app/models/report.rb:5:in `each'
+	from /home/aman/Desktop/hoc/app/models/report.rb:5:in `sendReport'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `eval'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/runner.rb:63:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:138:in `require_command!'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:104:in `runner'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/railties-5.0.7.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/aman/Desktop/hoc/bin/rails:9:in `<top (required)>'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/gems/2.4.0/gems/activesupport-5.0.7.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/aman/.rbenv/versions/2.4.6/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 4404
+Running via Spring preloader in process 4645
+Running via Spring preloader in process 2147
+Running via Spring preloader in process 3762
+Running via Spring preloader in process 4057
+Running via Spring preloader in process 4350
+Running via Spring preloader in process 4602
+Running via Spring preloader in process 4858
+Running via Spring preloader in process 5100
+Running via Spring preloader in process 5325
+Running via Spring preloader in process 5555
+Running via Spring preloader in process 5792
+Running via Spring preloader in process 6015
+Running via Spring preloader in process 6236
+Running via Spring preloader in process 6483
+Running via Spring preloader in process 6706
+Running via Spring preloader in process 6930
+Running via Spring preloader in process 7163
+Running via Spring preloader in process 7385
+Running via Spring preloader in process 8454
+Running via Spring preloader in process 8678
+Running via Spring preloader in process 8919
+Running via Spring preloader in process 10543
+Running via Spring preloader in process 11140
+Running via Spring preloader in process 2988
+Running via Spring preloader in process 3161
+Running via Spring preloader in process 5624
+Running via Spring preloader in process 5858
+Running via Spring preloader in process 6079
+Running via Spring preloader in process 6311
+Running via Spring preloader in process 6543
+Running via Spring preloader in process 6771
+Running via Spring preloader in process 6993
+Running via Spring preloader in process 7218
+Running via Spring preloader in process 7514
+Running via Spring preloader in process 7746
+Running via Spring preloader in process 7992
+Running via Spring preloader in process 8213
+Running via Spring preloader in process 8438
+Running via Spring preloader in process 8664
+Running via Spring preloader in process 8891
+Running via Spring preloader in process 9123
+Running via Spring preloader in process 9349
+Running via Spring preloader in process 9570
+Running via Spring preloader in process 9796
+Running via Spring preloader in process 10024
+Running via Spring preloader in process 10246
+Running via Spring preloader in process 10471
+Running via Spring preloader in process 10706
+Running via Spring preloader in process 10933
+Running via Spring preloader in process 11157
+Running via Spring preloader in process 11391
+Running via Spring preloader in process 11611
+Running via Spring preloader in process 11897
+Running via Spring preloader in process 12147
+Running via Spring preloader in process 12397
+Running via Spring preloader in process 12666
+Running via Spring preloader in process 13147

@@ -6,7 +6,7 @@ def self.sendReport
 @l="https://www.herokuoncaffeine.in/websites/getgraph/"+e.to_s
 #`export DISPLAY=":0.0"`
 
-`vncserver ;export DISPLAY=":0.0";python -m webbrowser  #{@l} ;  killall -9 chrome ; vncserver -kill :1`
+`vncserver ; export DISPLAY=:0.0; python -m webbrowser  #{@l} ;  killall -9 chrome ; vncserver -kill :1`
 
 NofitymailMailer.status(e).deliver_now
 
